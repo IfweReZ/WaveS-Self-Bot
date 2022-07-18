@@ -1,0 +1,5 @@
+discord
+aiohttp
+random2
+colorama
+requests
