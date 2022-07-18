@@ -96,7 +96,7 @@ async def ава(ctx, *, user: discord.User = None):
 async def серверинфо(ctx):
     date_format = "%a, %d %b %Y %I:%M %p"
     try:
-        await ctx.send(f"Информация о сервере {ctx.guild.name}:" + "\n" + "Дата создания:" + " - " + f"{ctx.guild.created_at.strftime(date_format)}" + "\n" + "Владелец сервера" + " - " + f"<@{ctx.guild.owner_id}>" + "\n" + "ID Сервера" + " - " + f"{ctx.guild.id}" + "\n" + f"{ctx.guild.member_count} Участников\n{len(ctx.guild.roles)} Ролей\n{len(ctx.guild.text_channels)} Текстовый каналов\n{len(ctx.guild.voice_channels)} Голосовых каналов\n{len(ctx.guild.categories)} Категорий")
+        await ctx.send(f"Информация о сервере {ctx.guild.name}:" + "\n" + "Дата создания:" + " - " + f"{ctx.guild.created_at.strftime(date_format)}" + "\n" + "Владелец сервера" + " - " + f"<@{ctx.guild.owner_id}>" + "\n" + "ID Сервера" + " - " + f"{ctx.guild.id}" + "\n" + f"{ctx.guild.member_count} Участников\n{len(ctx.guild.roles)} Ролей\n{len(ctx.guild.text_channels)} Текстовых каналов\n{len(ctx.guild.voice_channels)} Голосовых каналов\n{len(ctx.guild.categories)} Категорий")
     except AttributeError:
         print(f"Ты чё тупой что-бы писать эту команду челику в лс?") 
 
